@@ -1,3 +1,5 @@
+package com.dhimate.WmTestAssured;
+
 import io.restassured.RestAssured;
 import org.junit.Before;
 

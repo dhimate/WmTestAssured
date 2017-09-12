@@ -1,3 +1,5 @@
+package com.dhimate.WmTestAssured;
+
 import io.restassured.response.Response;
 import org.junit.Test;
 
