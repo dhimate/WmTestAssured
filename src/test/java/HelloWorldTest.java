@@ -1,20 +1,14 @@
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.junit.Before;
 import org.junit.Test;
 
-import static io.restassured.RestAssured.basic;
+import java.util.HashMap;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.lessThan;
+import static org.hamcrest.Matchers.equalTo;
 
-public class HelloWorldTest {
-    @Before
-    public void setUp() throws Exception {
-        RestAssured.baseURI = "http://localhost:5555/invoke/";
-        RestAssured.port = 5555;
-        RestAssured.authentication = basic("Administrator", "manage");
-    }
+
+public class HelloWorldTest extends WmTestAssuredBase {
 
     @Test
     public void HellowWorldTestSuccess(){
@@ -25,13 +19,19 @@ public class HelloWorldTest {
 
         response.getBody().prettyPrint();
 
-        assertThat(response.getStatusCode(),lessThan(300));
+        assertThat(response.getStatusCode(), equalTo(200));
+        HashMap body = response.jsonPath().get("");
+
+        assertThat("Check one", body.get("one"), equalTo("number #1"));
+        assertThat("Check two", body.get("two"), equalTo("number #2"));
+
+
     }
 
     @Test
     public void HellowWorldTestFailure(){
 
-        assertThat("Failed test", false);
+        assertThat("Failed test", true);
 
     }
 }
