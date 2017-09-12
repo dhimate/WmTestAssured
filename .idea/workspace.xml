@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c9b0b47-65a3-454e-bb99-e510923f5762" name="Default" comment="Externalized properties">
+    <list default="true" id="3c9b0b47-65a3-454e-bb99-e510923f5762" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/dhimate/WmTestAssured/HelloWorldTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/dhimate/WmTestAssured/HelloWorldTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/dhimate/WmTestAssured/WmTestAssuredBase.java" afterPath="$PROJECT_DIR$/src/test/java/com/dhimate/WmTestAssured/WmTestAssuredBase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -576,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505225106539</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Externalized properties">
+      <created>1505226325057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1505226325057</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
